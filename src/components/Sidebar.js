@@ -4,6 +4,7 @@ const CategorySidebar = ({ categories, onCategorySelect, sidebarOpen, toggleSide
   
   return (
     <div className={`sidebar ${sidebarOpen ? 'open' : 'closed'}`}>
+      
       <button className="toggle-btn" onClick={toggleSidebar}>&#9776;</button>
       <h2>Categories</h2>
       <ul>

@@ -6,7 +6,7 @@ import '../App.js'
 const NewsList = ({ news, onNewsSelect }) => {
   return (
     <div className="news-list">
-      <h1>Latest News</h1>
+      <h1>STREAMLINE NEWS</h1>
       {news.map((newsItem) => (
         <NewsItem key={newsItem.id} news={newsItem} onClick={onNewsSelect} />
       ))}

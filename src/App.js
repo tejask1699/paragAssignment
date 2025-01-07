@@ -15,19 +15,22 @@ const App = () => {
     setSidebarOpen(!sidebarOpen);
   };
   
-  const getData = () =>{
-    let url = "https://newsdata.io/api/1/news?apikey=pub_635031f8dfedfcd1866ea8b447113b762127f&language=en&category=technology"
-    fetch(url)
-    .then(res => res.json())
-    .then(data =>{
-      setNews(data)
-    })
-    .catch(e => console.log(e.message));
-  }
-  useEffect(()=>{
-    getData();
-  },[])
-console.log(news)
+//   const getData = () =>{
+//     let url = "https://newsdata.io/api/1/news?apikey=pub_635031f8dfedfcd1866ea8b447113b762127f&language=en&category=technology"
+//     fetch(url)
+//     .then(res => res.json())
+//     .then(data =>{
+//       setNews(data)
+//     })
+//     .catch(e => console.log(e.message));
+//   }
+//   useEffect(()=>{
+//     getData();
+//   },[])
+// console.log(news)
+
+
+//Dummy data since the api was not working
   const newsData = [
     { id: 1, title: 'Politics: Global Summit Discusses Future of Economy', category: 'Politics', summary: 'At the recent global summit...', content: 'Full article content for politics news...' },
     { id: 2, title: 'Sports: Local Team Wins Championship', category: 'Sports', summary: 'In an exciting final, the local team...', content: 'Full article content for sports news...' },
