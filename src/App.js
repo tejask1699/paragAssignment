@@ -42,7 +42,7 @@ console.log(news)
   return (
     <div className="app">
       <Sidebar 
-        categories={['Politics', 'Sports', 'Technology', 'Entertainment']} 
+        categories={['Business','General', 'Sports','Health', 'Technology', 'Entertainment',]} 
         onCategorySelect={setActiveCategory} 
         sidebarOpen={sidebarOpen} 
         toggleSidebar={toggleSidebar}

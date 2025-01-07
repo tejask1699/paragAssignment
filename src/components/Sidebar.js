@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.js'
-const CategorySidebar = ({ categories, onCategorySelect, sidebarOpen, toggleSidebar }) => {
+const CategorySidebar = ({ categories, onCategorySelect, sidebarOpen, toggleSidebar}) => {
+  
   return (
     <div className={`sidebar ${sidebarOpen ? 'open' : 'closed'}`}>
       <button className="toggle-btn" onClick={toggleSidebar}>&#9776;</button>
